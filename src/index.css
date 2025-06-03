@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+:root {
+  --lightgray: #D9D9D9;
+  --gray: #9c9c9c;
+  --orange: #f48915;
+  --darkGrey: #464D53;
+  --caloryCard: #656565;
+  --planCard: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
+  --appColor: #3c3f45;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --planCardBackground: ;
+}
+.planCardBackground{
+background-color: var(--planCardBackground);
+}
+*{
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+  background: #464D53;
+}
+
+.on{
+transform: translateX(450%);
+transition: transform 1s ease-in-out;
+}
+.off{
+transform: translateX(0%);
+transition: transform 1s ease-in-out;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.header>ul>li:hover {
+  cursor: pointer;
+  color: #f48915;
+}
+
+.stroke-text {
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  -webkit-text-stroke-width: 1px;
+}
+
+.btn {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #f48915;
+  padding: 3px 20px;
+  font-weight: 500;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.card>:nth-child(1) {
+  fill: white;
+  width: 2rem;
+  height: 2rem;
+}
+
+.card:hover {
+  background: var(--planCard);
+  cursor: pointer;
+}
+.planCardButton:hover{
+  background-color: #ffa739;
+  box-shadow: white 0px 0px 10px;
+  color: white;
+}
+.arrow:hover{
+  height: 25px;
+  
+  cursor: pointer;
+}
+.socialIcon:hover{
+ background-color: white;
+ border-radius: 25px;
+}
+.socialIcon:active{
+  background-color: #f48915;
+  border-radius: 25px;
+
+}
