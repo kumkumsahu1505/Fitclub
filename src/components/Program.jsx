@@ -12,9 +12,9 @@ function Program() {
       </div>
 
       {/* Program Cards */}
-      <div className='flex justify-between gap-4 mt-10 text-white mx-5'>
+      <div className='flex justify-around gap-4 mt-10 text-white mx-5 flex-wrap'>
         {programsData.map((cardData, index) => (
-          <div key={index} className='card bg-[var(--caloryCard)] px-10 py-5 h-60 w-90'>
+          <div key={index} className='card bg-[var(--caloryCard)] px-10 py-5 h-60 max-w-90'>
           {cardData.image}
             <h1 className='font-bold text-xl mb-3 mt-3'>{cardData.heading}</h1>
             <p >{cardData.details}</p>

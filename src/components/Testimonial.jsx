@@ -17,9 +17,9 @@ function Testimonial() {
       else setCurrentIndex(currentIndex + 1);
     }
     return (
-        <div id='testimonial' className='w-auto flex flex-row gap-40 h-auto my-20'>
+        <div id='testimonial' className='w-auto flex flex-row gap-40 min-h-[50vh] my-20'>
             {/* Left content remains unchanged */}
-            <div className='px-10 mt-20 w-1/2'>
+            <div className='px-10 mt-20 w-1/2 h-full'>
                 <h3 className='text-orange-400 font-bold text-xl'>TESTIMONIALS</h3>
                 <div className='text-5xl font-bold text-white'>
                     <h1 className='stroke-text py-8'>WHAT THEY</h1>
@@ -33,7 +33,7 @@ function Testimonial() {
                 </h3>
             </div>
 
-            <div className='flex flex-col items-center mt-20 relative mr-[5%]'>
+            <div className='flex flex-col items-center mt-20 relative mr-[5%] h-full w-[30vw]'>
                 {/* Frame effect */}
                 <div className='relative w-[250px] h-[300px]'>
                     <div className='absolute top-4 left-4 w-full h-full  bg-gradient-to-r from-[#fa5042] to-[#ffa739]'/>

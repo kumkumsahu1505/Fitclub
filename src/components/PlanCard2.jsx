@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import heartHealth from '../assets/heartHealth.png'
 import PlanPoints from './PlanPoints'
 import arrow from '../assets/arrow.png'
@@ -17,7 +18,10 @@ function PlanCard2() {
                     </a>
                     <img src={arrow} alt="arrow image" />
                 </div>
-                <button className='planCardButton flex p-2 items-center justify-center text-lg bg-white text-black font-bold'>Join now</button>
+                <Link to='/registration'>
+                   <button className='planCardButton flex p-2 items-center justify-center text-lg bg-white text-black font-bold'>Join now</button>
+                </Link>
+             
             </div>
         </>
     )

@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import dumble from '../assets/dumble.png'
 import PlanPoints from './PlanPoints'
 import arrow from '../assets/arrow.png'
@@ -18,7 +19,8 @@ function PlanCard3() {
                     </a>
                     <img src={arrow} alt="arrow image" className='bg-transparent' />
                 </div>
-                <button className='planCardButton flex p-2 items-center justify-center text-lg bg-white text-black font-bold'>Join now</button>
+               <Link to='/registration'>
+                <button className='planCardButton flex p-2 items-center justify-center text-lg bg-white text-black font-bold'>Join now</button></Link>
             </div>
 
         </>

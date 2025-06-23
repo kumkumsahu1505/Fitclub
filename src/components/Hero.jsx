@@ -1,22 +1,27 @@
 import React, { useState } from 'react'
+
+import { Link } from 'react-router-dom';
 import Header from './Header'
 import heart from '../assets/heart.png'
 import hero from '../assets/hero.png'
 import heroBack from '../assets/hero-back.png'
 import calorie from '../assets/calorie.png'
-import { set } from 'mongoose'
+
 export default function Hero() {
   const [isOn, setIsOn] = useState(false)
+  const [isLoginPageOpen, setisLoginPageOpen] = useState(false)
   const handleToggle = ()=>{
     setIsOn(!isOn)
   }
+ const handleLoginPage=()=>{
+ 
+ }
   return (
     <>
       <div id='home' className="flex justify-between">
         <div className="left flex-3 p-8 pt-6">
-          <Header />
         {/* the best ad */}
-          <div onClick={handleToggle} className='flex justify-start items-center text-xl text-white border-2 border-[#838485] rounded-3xl uppercase object-contain px-4 py-1 inline-block bg-[#2e3236] mt-15 relative'>
+          <div onClick={handleToggle} className='flex justify-start items-center text-xl text-white border-2 border-[#838485] rounded-3xl uppercase object-contain px-4 py-1 inline-block bg-[#2e3236] mt-15 relative cursor-pointer'>
             <div  className={`${isOn?"on":"off"} bg-[#f48915] absolute z-0 w-16 h-[80%] top-1 left-2 rounded-3xl `}></div>
             <span  className={` relative z-3`}>
               the best fitness club in the town
@@ -46,8 +51,9 @@ export default function Hero() {
 
            {/* hero buttons */}
           <div className='flex gap-4 mt-5'>
-          <button className='btn bg-[#f48915]'>Get Started</button>
-          <button className='btn bg-transparent'>Learn More</button>
+          <button className='btn bg-[#f48915]'
+          onClick={handleLoginPage}>Get Started</button>
+          <Link to='/learnMore'><button className='btn bg-transparent' >Learn More</button></Link>
           </div>
         </div>
 
