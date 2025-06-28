@@ -8,7 +8,7 @@ function HeaderLink() {
               <li><Link to='/programs' href="#program">Programs</Link></li>
               <li><Link to='/whyFitClub' href="#why">Why us</Link></li>
               <li><Link to='plans' href="#plan">Plans</Link></li>
-              <li><Link to='/testimonial' href="#testimonial">Testimonial</Link></li>
+              <li><Link to='/testimonials' href="#testimonial">Testimonial</Link></li>
             </ul>
     </div>
   )

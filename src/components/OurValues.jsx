@@ -12,7 +12,7 @@ function OurValues() {
              <h1 className='uppercase text-4xl text-orange-400 font-bold pb-4 text-center'>our values</h1>
                 <p className='text-white text-xl text-center'>We live and breathe our six core values and six brand promises — they serve as the backbone of our operations and speak of our commitment to improving the lives of our customers, supporting our team, championing industry standards, and driving our business with integrity and passion.</p>
         </div>
-            <div className='ourValue px-4 flex flex-wrap justify-center gap-8 '>
+            <div className='ourValue px-4 flex flex-wrap justify-center gap-8 py-20'>
                
                 <figure>
                     <img src={peopleCentric} alt="" />

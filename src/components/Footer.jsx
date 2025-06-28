@@ -7,7 +7,7 @@ import twitter from '../assets/twitter-svgrepo-com.svg'
 import {Link} from 'react-router-dom'
 function Footer() {
   return (
-    <div className='bg-gray-800 p-10 mt-20 text-white'>
+    <div className='bg-gray-800 p-10  text-white'>
     <div className='flex gap-5 justify-around'>
       <div className='max-w-[30vw] flex flex-col gap-6'>
         <img src={logo} alt="FitClub logo" className="h-15 object-contain" />
@@ -28,8 +28,8 @@ function Footer() {
         <h1 className='uppercase text-white font-bold text-2xl underline'>SUPPORT </h1>
         <Link to='/faq'>FAQ</Link>
         <Link to='/contactUs'>contact us</Link>
-        <Link to='/privacyPolicy'>privacy policy</Link>
-        <Link to='/t&c'>terms & conditions</Link>
+        <Link to='/PrivacyPolicy'>privacy policy</Link>
+        <Link to='/term&condition'>terms & conditions</Link>
       </div>
       <div className='flex flex-col gap-5'>
         <h1 className='uppercase text-white font-bold text-2xl underline'>company </h1>
@@ -37,12 +37,12 @@ function Footer() {
         <Link to='/whyFitClub'>About Us</Link>
         <Link to='/contactUs'>contact us</Link>
         <Link to='/OurPlan'>plans</Link>
-        <Link to='/t&c'>terms & conditions</Link>
+        <Link to='/term&condition'>terms & conditions</Link>
       </div>
       <div className='flex flex-col gap-5'>
-        <img src={InstagramIcon} alt="Instagram" className='socialIcon h-12 w-12' />
-        <img src={github} alt="LinkedIn" className='socialIcon h-12 w-12' />
-        <img src={twitter} alt="GitHub" className='socialIcon h-12 w-12'/>
+        <img src={InstagramIcon} alt="Instagram" className='socialIcon h-12 w-12 bg-white rounded-full' />
+        <img src={github} alt="LinkedIn" className='socialIcon h-12 w-12 bg-white rounded-full' />
+        <img src={twitter} alt="GitHub" className='socialIcon h-12 w-12 bg-white rounded-full'/>
       </div>
     </div>
     <div>

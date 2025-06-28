@@ -5,7 +5,7 @@ import PlanCard from '../components/PlanCard'
 
 function ProgramsPage() {
   return (
-    <div className='bg-[#1B2024] py-15'>
+    <div className='bg-[#1B2024] py-15 '>
       <Features/>
       <LiveClass/>
       <PlanCard/>
