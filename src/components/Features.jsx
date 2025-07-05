@@ -1,6 +1,6 @@
 import React from 'react'
 import Program1 from '../assets/Program1.jpg'
-import Program2 from '../assets/Program2.jpg'
+import Program2 from '../assets/program2.jpg'
 import Program3 from '../assets/Program3.jpg'
 import Program4 from '../assets/Program4.mp4'
 import Program5 from '../assets/Program5.jpg'
