@@ -19,7 +19,8 @@ function Program() {
             <h1 className='font-bold text-xl mb-3 mt-3'>{cardData.heading}</h1>
             <p >{cardData.details}</p>
             <div className='flex gap-10 mt-5 items-center'>
-            <span className='font-semibold'>Join Now</span> 
+            <span className='font-semibold'
+            >Join Now</span> 
             <img src={rightArrow} alt="right Arrow"  className='w-5 h-5'/>
             </div>
           </div>

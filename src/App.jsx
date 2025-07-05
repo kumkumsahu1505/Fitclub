@@ -1,15 +1,11 @@
 import Home from './Pages/Home'
 import Login from './Pages/Login'
 import Faq from './components/Faqs'
-// import Cardio from './Pages/Cardio'
-// import FatBurning from './Pages/FatBurning'
 import AppLayout from './components/AppLayout'
-// import Health from './Pages/Health'
 import LearnMore from './Pages/LearnMore'
 import Plans from './Pages/Plans'
 import ProgramsPage from './Pages/ProgramsPage'
 import Registration from './Pages/Registration'
-// import Strength from './Pages/Strength'
 import Testimonial from  './Pages/Testimonials'
 import WhyUs from './Pages/WhyUs'
 import ContactUs from './Pages/ContactUs'
@@ -20,7 +16,7 @@ import PlanCard from './components/PlanCard'
 import PrivacyPolicy from './Pages/PrivacyPolicy'
 
 function App() {
-
+    
   const router = createBrowserRouter([
     {
       path: '/',
@@ -35,18 +31,6 @@ function App() {
           element: <Login />,
 
         },
-        //          {
-        //           path: '/cardio',
-        //           element: <Cardio/>,
-        //         },
-        //         {
-        //           path: '/fatBurning',
-        //           element: <FatBurning/>,
-        //         },
-        //          {
-        //           path: '/health',
-        //           element: <Health/>,
-        //         },
         {
           path: '/learnMore',
           element: <LearnMore />,
@@ -75,10 +59,6 @@ function App() {
           path: '/PrivacyPolicy',
           element: <PrivacyPolicy />,
         },
-        //         {
-        //           path: '/strength',
-        //           element: <Strength/>,
-        //         },
         {
           path: '/testimonials',
           element: <Testimonial/>,

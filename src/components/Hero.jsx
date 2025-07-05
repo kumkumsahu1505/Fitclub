@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import Login from '../Pages/Login'
 import { Link } from 'react-router-dom';
 import Header from './Header'
 import heart from '../assets/heart.png'
@@ -13,9 +13,6 @@ export default function Hero() {
   const handleToggle = ()=>{
     setIsOn(!isOn)
   }
- const handleLoginPage=()=>{
- 
- }
   return (
     <>
       <div id='home' className="flex justify-between">
@@ -51,8 +48,9 @@ export default function Hero() {
 
            {/* hero buttons */}
           <div className='flex gap-4 mt-5'>
+          <Link to='/registration'>
           <button className='btn bg-[#f48915]'
-          onClick={handleLoginPage}>Get Started</button>
+          >Get Started</button></Link>
           <Link to='/learnMore'><button className='btn bg-transparent' >Learn More</button></Link>
           </div>
         </div>

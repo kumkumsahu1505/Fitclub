@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import Logo from '../assets/logo.png'
 function Registration() {
   return (
-    <section className='flex justify-center items-center mt-10'>
+    <section className='flex justify-center items-center my-10'>
       <form action="" className='flex flex-col gap-8 text-white text-lg items-center h-full min-h-[500px] min-w-[50vw] justify-center bg-gray-800 border-2 border-white'>
         <img src={Logo} alt="" className='w-[10vw]' />
         <input type="text" name="name" id="name" placeholder='Enter Your Name ' className='border-2 rounded-xl p-2 outline-none' />
