@@ -27,17 +27,17 @@ function Footer() {
       <div className='flex flex-col gap-5'>
         <h1 className='uppercase text-white font-bold text-2xl underline'>SUPPORT </h1>
         <Link to='/faq'>FAQ</Link>
-        <Link to='/contactUs'>contact us</Link>
-        <Link to='/PrivacyPolicy'>privacy policy</Link>
-        <Link to='/term&condition'>terms & conditions</Link>
+        <Link to='/contactUs'>Contact Us</Link>
+        <Link to='/PrivacyPolicy'>Privacy Policy</Link>
+        <Link to='/term&condition'>Terms & Conditions</Link>
       </div>
       <div className='flex flex-col gap-5'>
         <h1 className='uppercase text-white font-bold text-2xl underline'>company </h1>
          <Link to='/'>Home</Link>
         <Link to='/whyFitClub'>About Us</Link>
-        <Link to='/contactUs'>contact us</Link>
-        <Link to='/OurPlan'>plans</Link>
-        <Link to='/term&condition'>terms & conditions</Link>
+        <Link to='/contactUs'>Contact Us</Link>
+        <Link to='/plans'>Plans</Link>
+        <Link to='/term&condition'>Terms & Conditions</Link>
       </div>
       <div className='flex flex-col gap-5'>
         <img src={InstagramIcon} alt="Instagram" className='socialIcon h-12 w-12 bg-white rounded-full' />
